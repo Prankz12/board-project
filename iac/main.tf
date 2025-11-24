@@ -47,7 +47,7 @@ resource "aws_instance" "jenkins" {
 
 resource "aws_instance" "monitoring" {
   ami                    = var.ami
-  instance_type          = "t2.medium"
+  instance_type          = "t2.micro"
   key_name               = var.key_name
   vpc_security_group_ids = [aws_security_group.Project-SG.id]
   user_data              = templatefile("./monitor.sh", { PROM_VERSION = "2.52.0" })
