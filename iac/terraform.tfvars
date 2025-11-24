@@ -1,5 +1,5 @@
 ami            = "ami-0360c520857e3138f"
-instance_type  = "t2.large"
-key_name       = "nvg"
+instance_type  = "t3.micro"
+key_name       = "east"
 security_group = "Project-SG"
 region         = "us-east-1"
